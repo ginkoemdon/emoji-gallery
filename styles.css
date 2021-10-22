@@ -1,35 +1,68 @@
-html{
+* {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1;
+    background-color: seagreen;
+    margin: 0;
+
+}
+
+html {
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    background-color: seagreen;
+/* Title */
+h1 {
+    text-align: center;
+    color: white;
+    padding-bottom: 0.5em;
 }
 
-h1{
-text-align: center;
-}
-    
-.container{
+/* Wrapper that holds JavaScript InnerHtml */
+.container {
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
+    justify-content: center;
 }
 
-.emojicontent{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 2em; 
-}
-
-p.hiemoji{
-font-size: 4em;
-margin: 2px;
-}
-
-h3{
+/* Emoji Codes */
+h3 {
     text-align: center;
     color: aliceblue
 }
 
+div#emojis.container {
+    margin: 0;
+}
+
+/* Div of Emoji Contents*/
+.emojicontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    width: auto;
+    flex-grow: 1;
+    flex: 0 1 auto;
+    justify-content: space-evenly;
+}
+
+p.hiemoji {
+    font-size: 4em;
+    margin: 2px;
+}
+
+/* ====Footer=== */
+.definition {
+    padding: 1em;
+    background-color: white;
+    border-radius: 1em 1em 0 0;
+    flex: 0 1 auto;
+    padding: 2em;
+}
+
+h2 {
+    margin-top: 0.5em;
+}

@@ -1,16 +1,15 @@
 const $emojis = document.getElementById('emojis')
 
 // initiaize; test; increment
-for (let i = 129409; i < 129509; i++) {
+for (let i = 128010; i < 128110; i++) {
     $emojis.innerHTML += `<div class="emojicontent"><p class="hiemoji">&#${i}</p><h3>${i}</h3></div>`
 }
 
-// NOTES TO SELF
-// backticks used to combine a string with the variables
-//brown static, blue is dynamic
+// ====NOTES TO SELF
+// Brown static, Blue is dynamic 
+// initialize: counting /loop start at first emoji number
+// test: emoji code + 100 = i < 
+// increment: i++ = how much I want to add to the value (1)each time it goes through
+// backticks used to combine a string with variables
 
-// initiaize; test; increment
-// counter i = keep track on how many times youve looped 
-// initialize : counting /loop start at 0
-// test i<100 how many times it will loop the line of code 
-// increment: i++ = how much I want to add to the value each time you go through
+//Emoji Code Reference: https://www.w3schools.com/charsets/ref_emoji.asp
